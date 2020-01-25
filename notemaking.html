@@ -3,39 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<title>
-		NoteManager: Take notes efficiently!
+		NoteManager: Manage notes efficiently!
 	</title>
+	<link rel="stylesheet" href="notemaking.css">
 </head>
 
 <body>
 	
-	<div>
+	<div class="wrapper">
 		<header>
 			<h1>
 				Note Manager
 			</h1>
-			<form>
+			<p>designed by Kartikey Sinha</p>
+			<form id="search-note">
 				<input type="text" value="search notes">
 			</form>
 		</header>
 
-		<div>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
+		<div class="note-list">
+			<ul id="list">
+				<li>
+					<p>First Note</p>
+					<p>
+						<i class="fa fa-pencil-square-o"></i>
+						<i class="fa fa-times"></i>
+					</p>
+					<input class="edit-note" type="text">
+				</li>
+
+				<li>
+					<p>First Note</p>
+					<p>
+						<i class="fa fa-pencil-square-o"></i>
+						<i class="fa fa-times"></i>
+					</p>
+					<input class="edit-note" type="text">
+				</li>
+
+				<li>
+					<p>First Note</p>
+					<p>
+						<i class="fa fa-pencil-square-o"></i>
+						<i class="fa fa-times"></i>
+					</p>
+					<input class="edit-note" type="text">
+				</li>
 			</ul>
 
+		</div>
+
+		<div id="hide-note">
 			<form>
-				<input type="submit" value="Hide Note!">
+				<label for="hide">Hide Notes</label>
+				<input type="checkbox" id=hide>
 			</form>
 		</div>
 
 		<div>
 			<footer>
-				<form>
-					<input type="text" value="Add new Note">
-					<input type="submit" value="ADD!">
+				<form id="add-notes">
+					<input type="text" value="Add new Note" id="add-input">
+					<input type="submit" value="ADD!" id="add-btn">
 				</form>
 			</footer>
 		</div>
